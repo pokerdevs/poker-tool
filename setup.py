@@ -4,7 +4,10 @@ setup(
     name="poker-tool",
     author='Pokerdevs',
     author_email='pokerdevs@proton.me',
-    use_scm_version=True,
+    use_scm_version={
+        'write_to': 'pokerdevs/poker_tool/_version.py',
+        'write_to_template': '__version__ = "{version}"',
+    },
     setup_requires=['setuptools_scm>6.0,<7'],
     install_requires=[],
     extras_require={
