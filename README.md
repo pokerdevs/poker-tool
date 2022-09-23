@@ -49,8 +49,10 @@ git push origin master vX.Y.Z
 
 ### Create a release
 
+For example:
+
 ```
 RELEASE_TAG=$(git describe --tags)
-python -m zipapp ./ -m "scripts.pokerdevs.poker_tool.poker_tool:main" -o poker-tool-${RELEASE_TAG}.pyz
+python -m zipapp ./ -m "scripts.pokerdevs.poker_tool.poker_tool:main" -o /tmp/poker-tool-${RELEASE_TAG}.pyz
 ```
 
