@@ -52,7 +52,7 @@ git push origin master vX.Y.Z
 For example:
 
 ```
-RELEASE_TAG=$(git describe --tags)
+RELEASE_TAG=$(python setup.py --version)
 python -m zipapp ./ -m "scripts.pokerdevs.poker_tool.poker_tool:main" -o /tmp/poker-tool-${RELEASE_TAG}.pyz
 ```
 

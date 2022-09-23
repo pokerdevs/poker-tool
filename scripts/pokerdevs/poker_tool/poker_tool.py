@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 def main():
     parser = argparse.ArgumentParser(description="Pokertool")
-    parser.add_argument("-v", "--version", action="version", version=f"poker-tool version {version(__version__)}")
+    parser.add_argument("-v", "--version", action="version", version=f"poker-tool version {__version__}")
     subparsers = parser.add_subparsers(dest='command', help='Which tool do you want to use ?')
     monker_to_pio_parser = subparsers.add_parser('monker-to-pio', help='Convert MonkerSolver ranges to PioSolver format')
     monker_to_pio_parser.add_argument("-i", "--input-path", type=str, required=True, help="Path to input directory containing Monker .rng files")
