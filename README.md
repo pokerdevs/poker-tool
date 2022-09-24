@@ -27,14 +27,12 @@ python PATH-TO-THE-PYZ-FILE --version
 
 This tool will convert MonkerSolver `.rng` ranges into a format usable by PioSolver.
 
-```
-usage: poker-tool.pyz monker-to-pio [-h] -i INPUT_PATH -o OUTPUT_PATH [-f]
-```
-
 For example:
 ```
 python c:\poker-tool.pyz --monker-to-pio -i c:\temp\monker-ranges\ -o c:\temp\pio-ranges
 ```
+
+- Obviously change the paths to match your own setup !
 
 ## Development
 
